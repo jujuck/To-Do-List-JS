@@ -21,6 +21,8 @@ const generateTask = (tache) => {
       <img src="./images/square.svg" alt="">
       <img src="./images/trash-fill.svg" alt="">
     </th>`
+
+    tr.innerHTML = task;
 }
 
 generateTask(tasks[0]);
