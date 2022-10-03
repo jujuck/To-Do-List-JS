@@ -8,4 +8,4 @@ const tasks = [
   }
 ]
 
-console.log(tasks)
+const tasksElements = document.getElementById('task');
