@@ -30,3 +30,8 @@ Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton t
     - Cette fonction reçoit en parametre l'`id` de la tâche (Pense à le mettre dynamiquement en arguments au moment de l'appel)
     - Pour supprimer la tâche de notre tableau (variable globale), filtrer sur ce tableau et ne garder que les élèments dont l'`id` est différent de celui reçu en parametre. Mémoriser directement le résultat dans notre variable globale `tasks`. Pour ce faire, passer cette variable en `let`
     - Finir en appelant notre fonction `render()`
+
+- 2/ Mise à jour des tâches (Bonus)
+    - Pour mettre à jour les tâches, il faut alterner l'affichage des images avec l'utilisation de la classe `d-none`.... Dans le template, met un ternaire sur les image `check...`. Si valid, alors class `d-none` sinon, rien ou l'inverse
+    - Retrouve via son id, l'élément à modifier et inverser son status de valid
+    - Re-render de l'affichage...
