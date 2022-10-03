@@ -9,3 +9,9 @@ const tasks = [
 ]
 
 const tasksElements = document.getElementById('task');
+
+const generateTask = (tache) => {
+  console.log("OK")
+}
+
+generateTask(tasks[0]);
