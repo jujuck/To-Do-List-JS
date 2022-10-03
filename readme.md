@@ -17,7 +17,7 @@ Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton t
 - 10/ N'oublie pas ton appel à la fonction `render()` en bas de ton fichier.
 - 11/ Supprime maintenant la tache écrite dans le HTML directement pour ne garder que les tâches en mode dynamique.
 
-## 2ème partie: ajouter une nouvelle cartes
+## 2ème partie: ajouter une nouvelle carte
 - 1/ Créer un nouvelle fonction `addTask()` et ajouter la au `<button>` (Via onclick ou addEventListeners). Attention, lors d'un clic de bouton dans un formulaire, le comportement par défaut du navigateur est le rafraichissement... Utilise le `event` en paramètre pour annuler ce comportement
 - 2/ Dans cette fonction, commencer par mémoriser l'ensemble des champs du formulaire dans différentes variables
 - 3/ Gestion de l'id de notre tâche (On doit s'assurer que son `id` est unique). Créer une variable (`let`) globale avec une valeur 1;
