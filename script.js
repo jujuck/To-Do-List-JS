@@ -26,4 +26,8 @@ const generateTask = (tache) => {
   tasksElements.appendChild(tr)
 }
 
-generateTask(tasks[0]);
+const render = () => {
+  for (let i = 0; i < tasks.length; i++) {
+    generateTask(tasks[i]);
+  }
+}
