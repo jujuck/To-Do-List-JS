@@ -37,6 +37,14 @@ const render = () => {
 const addTask = (event) => {
   event.preventDefault();
   console.log("Add task")
+
+  const task = {
+    label: document.getElementById('label').value,
+    detail: document.getElementById('detail').value,
+    category: document.getElementById('category').value
+  }
+
+  console.log(task)
 }
 
 document.getElementById("addTask").addEventListener('click', (event) => addTask(event))
