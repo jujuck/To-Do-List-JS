@@ -13,9 +13,9 @@ const tasksElements = document.getElementById('task');
 const generateTask = (tache) => {
   const tr = document.createElement('tr');
   const task = `<th scope="row" class="text-primary">1</th>
-    <th>Pain</th>
-    <th>Achat de 2 pains</th>
-    <th>Alimentaire</th>
+    <th>${tache.label}</th>
+    <th>${tache.detail}</th>
+    <th>${tache.category}</th>
     <th>
       <img src="./images/check-square.svg" alt="" class="d-none">
       <img src="./images/square.svg" alt="">
