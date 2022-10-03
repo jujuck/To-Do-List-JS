@@ -38,14 +38,16 @@ const render = () => {
 const addTask = (event) => {
   event.preventDefault();
   console.log("Add task")
-
-  const task = {
+  id++;
+  tasks.push({
+    id,
     label: document.getElementById('label').value,
     detail: document.getElementById('detail').value,
-    category: document.getElementById('category').value
-  }
+    category: document.getElementById('category').value,
+    valid: true
+  })
 
-  console.log(task)
+  console.log(tasks)
 }
 
 document.getElementById("addTask").addEventListener('click', (event) => addTask(event))
