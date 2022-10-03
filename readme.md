@@ -13,7 +13,7 @@ Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton t
 - --- A ce stade, une nouvelle tache (identique) doit s'afficher dans ton navigateur.. Alors retire l'appel à la fonction `generateTask()`
 - 7/ Créer une fonction `render()` qui va boucler sur notre tableau de tâches et appeller la fonction `generateTask()` pour chacune d'elles. Passe la tâche concernée en argument.
 - 8/ Dans la fonction `generateTask(task)`, modifie ton template pour qu'il accepte les valeurs particulières de la tâche.
-- 9/ Attention, avant ta boucle, penser à ré-initialiser ton HTML en passant le `ìnnerHTML` de ta variable globale `task` à une valeure vide ("");
+- 9/ Attention, avant ta boucle, penser à ré-initialiser ton HTML en passant le `ìnnerHTML` de ta variable globale `task` à une valeur vide ("");
 - 10/ N'oublie pas ton appel à la fonction `render()` en bas de ton fichier.
 - 11/ Supprime maintenant la tache écrite dans le HTML directement pour ne garder que les tâches en mode dynamique.
 
