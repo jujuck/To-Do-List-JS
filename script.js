@@ -27,6 +27,7 @@ const generateTask = (tache) => {
 }
 
 const render = () => {
+  tasksElements.innerHTML = "";
   for (let i = 0; i < tasks.length; i++) {
     generateTask(tasks[i]);
   }
