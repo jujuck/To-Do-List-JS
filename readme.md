@@ -4,7 +4,7 @@ Dans *index.html*, on retrouve la base de notre projet avec un formulaire d'ajou
 Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton travail va s'effectuer... Il y a actuellement la donnée pour une seule et unique tâche (Que j'espère que tu vas compléter)
 
 ## 1ère partie: générer les cartes à partir de la donnée
-- 1/ Dans *script.js*, en scope global, en haut de ton fichier, créer une constante pour mémoriser l'élément `taskElement` où l'on injectera nos tâches.
+- 1/ Dans *script.js*, en scope global, en haut de ton fichier, créer une constante `taskElement` pour mémoriser l'élément `<tbody>` où l'on injectera nos tâches.
 - 2/ Créer ensuite une fonction `generateTask()` avec un `console.log("ok")`. Ajouter son appel en dessous. Cette fonction va prendre une tâche en paramètre.
 - 3/ Dans cette fonction, mémoriser dans une constante `tr` un nouvel élément `<tr>` via`createElement()`
 - 4/ Mémoriser le template `<th>...</td>` présent dans le HTML, dans une constante (`task`) via une `template string`.
@@ -12,7 +12,7 @@ Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton t
 - 6/ `appendChild()` `tr` à ta variable globale `taskElement`;
 - --- A ce stade, une nouvelle tache (identique) doit s'afficher dans ton navigateur.. Alors retire l'appel à la fonction `generateTask()`
 - 7/ Créer une fonction `render()` qui va boucler sur notre tableau de tâches et appeller la fonction `generateTask()` pour chacune d'elles. Passe la tâche concernée en argument.
-- 8/ Dans la fonction `generateTask(task)`, modifie ton template pour qu'il accepte les valeurs particulières de la tâches.
+- 8/ Dans la fonction `generateTask(task)`, modifie ton template pour qu'il accepte les valeurs particulières de la tâche.
 - 9/ Attention, avant ta boucle, penser à ré-initialiser ton HTML en passant le `ìnnerHTML` de ta variable globale `task` à une valeure vide ("");
 - 10/ N'oublie pas ton appel à la fonction `render()` en bas de ton fichier.
 - 11/ Supprime maintenant la tache écrite dans le HTML directement pour ne garder que les tâches en mode dynamique.
