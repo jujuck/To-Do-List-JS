@@ -10,12 +10,12 @@ Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton t
 - 4/ Mémoriser le template `<th>...</td>` présent dans le HTML, dans une constante (`task`) via une `template string`.
 - 5/ Ajouter la valeur de ce template à ta variable `tr` en innerHTML.
 - 6/ `appendChild()` `tr` à ta variable globale `taskElement`;
-- --- A ce stade, une nouvelle tache (identique) doit s'afficher dans ton navigateur.. Alors retire l'appel à la fonction `generateTask()`
+- --- A ce stade, une nouvelle tache (identique) doit s'afficher dans ton navigateur.. Alors retirer l'appel à la fonction `generateTask()`
 - 7/ Créer une fonction `render()` qui va boucler sur notre tableau de tâches et appeller la fonction `generateTask()` pour chacune d'elles. Passe la tâche concernée en argument.
 - 8/ Dans la fonction `generateTask(task)`, modifie ton template pour qu'il accepte les valeurs particulières de la tâche.
 - 9/ Attention, avant ta boucle, penser à ré-initialiser ton HTML en passant le `ìnnerHTML` de ta variable globale `task` à une valeur vide ("");
-- 10/ N'oublie pas ton appel à la fonction `render()` en bas de ton fichier.
-- 11/ Supprime maintenant la tache écrite dans le HTML directement pour ne garder que les tâches en mode dynamique.
+- 10/ N'oublier pas ton appel à la fonction `render()` en bas de ton fichier.
+- 11/ Supprimer maintenant la tache écrite dans le HTML directement pour ne garder que les tâches en mode dynamique.
 
 ## 2ème partie: ajouter une nouvelle carte
 - 1/ Créer un nouvelle fonction `addTask()` et ajouter la au `<button>` (Via onclick ou addEventListeners). Attention, lors d'un clic de bouton dans un formulaire, le comportement par défaut du navigateur est le rafraichissement... Utilise le `event` en paramètre pour annuler ce comportement
