@@ -6,7 +6,8 @@ const tasks = [
     category: "Code",
     valid: true
   }
-]
+];
+let id = 1;
 
 const tasksElements = document.getElementById('task');
 
