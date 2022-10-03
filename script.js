@@ -32,3 +32,5 @@ const render = () => {
     generateTask(tasks[i]);
   }
 }
+
+render();
