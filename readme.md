@@ -28,5 +28,5 @@ Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton t
 - 1/ Suppression d'une tâches
     - Créer une fonction `deleteTask()` et implement son appel via `onclick` ou `addEventListener` sur l'image de la poubelle dans ton template (dans la fonction `generateTask()`)
     - Cette fonction reçoit en parametre l'`id` de la tâche (Pense à le mettre dynamiquement en arguments au moment de l'appel)
-    - Pour supprimer la tâche de notre tableau (variable globale), on va filtrer sur ce tableau et ne garder que les élèments dont l'`id` est différent de celui reçu en parametre. On mémorisera directement le résultat dans notre variable globale `tasks`
+    - Pour supprimer la tâche de notre tableau (variable globale), filtrer sur ce tableau et ne garder que les élèments dont l'`id` est différent de celui reçu en parametre. Mémoriser directement le résultat dans notre variable globale `tasks`. Pour ce faire, passer cette variable en `let`
     - Finir en appelant notre fonction `render()`
