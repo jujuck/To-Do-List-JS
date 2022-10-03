@@ -34,10 +34,9 @@ const render = () => {
   }
 }
 
-
 const addTask = (event) => {
   event.preventDefault();
-  console.log("Add task")
+
   id++;
   tasks.push({
     id,
@@ -47,7 +46,7 @@ const addTask = (event) => {
     valid: true
   })
 
-  console.log(tasks)
+  render();
 }
 
 document.getElementById("addTask").addEventListener('click', (event) => addTask(event))
