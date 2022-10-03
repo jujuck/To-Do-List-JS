@@ -6,8 +6,8 @@ Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton t
 ## 1ère partie: générer les cartes à partir de la donnée
 - 1/ Dans *script.js*, en scope global, en haut de ton fichier, créer une constante pour mémoriser l'élément `taskElement` où l'on injectera nos tâches.
 - 2/ Créer ensuite une fonction `generateTask()` avec un `console.log("ok")`. Ajouter son appel en dessous. Cette fonction va prendre une tâche en paramètre.
-- 3/ Dans cette fonction, mémoriser dans une constante `tr` un nouvel élément <tr> via`createElement()`
-- 4/ Mémoriser le template <th>...</td> présent dans le HTML, dans une constante (`task`) via une `template string`.
+- 3/ Dans cette fonction, mémoriser dans une constante `tr` un nouvel élément `<tr>` via`createElement()`
+- 4/ Mémoriser le template `<th>...</td>` présent dans le HTML, dans une constante (`task`) via une `template string`.
 - 5/ Ajouter la valeur de ce template à ta variable `tr` en innerHTML.
 - 6/ `appendChild()` `tr` à ta variable globale `taskElement`;
 - --- A ce stade, une nouvelle tache (identique) doit s'afficher dans ton navigateur.. Alors retire l'appel à la fonction `generateTask()`
@@ -18,7 +18,7 @@ Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton t
 - 11/ Supprime maintenant la tache écrite dans le HTML directement pour ne garder que les tâches en mode dynamique.
 
 ## 2ème partie: ajouter une nouvelle cartes
-- 1/ Créer un nouvelle fonction `addTask()` et ajouter la au <button> (Via onclick ou addEventListeners)
+- 1/ Créer un nouvelle fonction `addTask()` et ajouter la au `<button>` (Via onclick ou addEventListeners)
 - 2/ Dans cette fonction, commencer par mémoriser l'ensemble des champs du formulaire dans différentes variables
 - 3/ Gestion de l'id de notre tâche (On doit s'assurer que son `id` est unique). Créer une variable (`let`) globale avec une valeur 1;
 - 3/ Puis, on va ajouter une tâche complète à notre tableau de tâches. La valeur de `valid` est `true` par défaut. Incrémenter la variable `id`, puis assigner cette nouvelle valeur à notre objet `task`
