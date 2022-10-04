@@ -3,6 +3,8 @@
 Dans *index.html*, on retrouve la base de notre projet avec un formulaire d'ajout et une première tache (static). Le design est fait (cf *style.css*) mais n'hésites pas à le personnaliser à ta guise.
 Un fichier *script.js* est mis en place. C'est là qu'une grande partie de ton travail va s'effectuer... Il y a actuellement la donnée pour une seule et unique tâche (Que j'espère que tu vas compléter)
 
+Video de correction (https://drive.google.com/file/d/133xpg8B1HFPkXsz3BX47h-OhbzMjKP6r/view?usp=sharing)
+
 ## 1ère partie: générer les cartes à partir de la donnée
 - 1/ Dans *script.js*, en scope global, en haut de ton fichier, créer une constante `taskElement` pour mémoriser l'élément `<tbody>` où l'on injectera nos tâches.
 - 2/ Créer ensuite une fonction `generateTask()` avec un `console.log("ok")`. Ajouter son appel en dessous. Cette fonction va prendre une tâche en paramètre.
